@@ -1,22 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - prints numbers from 0 to 9.
+ * main - prints all base 10 digits
  *
- * Return: Always 0 (success)
+ * Return: 0 if execution was successful
  */
 int main(void)
 {
-    int i;
+	char digit;
 
-    for (i=0: i < 10; i++)
-    {
-        printf("%d", i);
-        number++;
-    }
+	for (digit = '0'; digit <= '9'; digit++)
+	{
+		putchar(digit);
+	}
 
-    printf("\n");
-
-    return 0;
+	putchar('\n');
+	return (0);
 }
-

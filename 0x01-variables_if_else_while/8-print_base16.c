@@ -1,21 +1,23 @@
 #include <stdio.h>
 
+/**
+ * main - prints the base-16 digits
+ *
+ * Return: 0 if execution was successful
+ */
 int main(void)
 {
-    char hexDigit;
+	char digit;
 
-    for (hexDigit = '0'; hexDigit <= '9'; hexDigit++)
-    {
-        putchar(hexDigit);
-    }
+	for (digit = '0'; digit <= '9'; digit++)
+	{
+		putchar(digit);
+	}
+	for (digit = 'a'; digit <= 'f'; digit++)
+	{
+		putchar(digit);
+	}
 
-    for (hexDigit = 'a'; hexDigit <= 'f'; hexDigit++)
-    {
-        putchar(hexDigit);
-    }
-
-    putchar('\n');
-
-    return 0;
+	putchar('\n');
+	return (0);
 }
-

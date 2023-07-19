@@ -3,33 +3,23 @@
 #include <time.h>
 
 /**
- * main-Determines if a number is positive, negetive or zero.
+ * main - assign a random number to a variable
+ * and prints its signed state
  *
- * Return: Always 0 (success)
- */ 
+ * Return: 0 if execution was successful
+ */
 int main(void)
 {
-    int n;
-    srand(time(0));
-    n = rand() % 201 - 100; // Generates a random number between -100 and 100
+	int n;
 
-    printf("The number %d is ", n);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-    if (n > 0)
-    {
-        printf("positive");
-    }
-    else if (n < 0)
-    {
-        printf("negative");
-    }
-    else
-    {
-        printf("zero");
-    }
-
-    printf("\n");
-
-    return 0;
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n == 0)
+		printf("%d is zero\n", n);
+	else
+		printf("%d is negative\n", n);
+	return (0);
 }
-

@@ -1,38 +1,30 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 #include <time.h>
 
 /**
- * main - prints the last diget of a randomly generated number
- * and whether it is greater than 5, less than 6, or 0.
+ * main - assign a random number to a variable
+ * and prints its last digit
  *
- * Return: Always 0.
+ * Return: 0 if execution was successful
  */
 int main(void)
 {
-    int n;
-    srand(time(0));
-    n = rand() % 1000; // Generates a random number between 0 and 999
+	int n;
+	char num[32];
+	char dig;
 
-    int lastDigit = n % 10;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	sprintf(num, "%d", n);
+	dig = num[strlen(num) - 1];
 
-    printf("Last digit of %d is ", n);
-
-    if (lastDigit > 5)
-    {
-        printf("%d and is greater than 5", lastDigit);
-    }
-    else if (lastDigit == 0)
-    {
-        printf("0");
-    }
-    else
-    {
-        printf("%d and is less than 6 and not 0", lastDigit);
-    }
-
-    printf("\n");
-
-    return 0;
+	if (dig > '5' && n > 0)
+		printf("Last digit of %d is %c and is greater than 5\n", n, dig);
+	else if (dig == '0')
+		printf("Last digit of %d is %c and is 0\n", n, dig);
+	else
+		printf("Last digit of %d is -%c and is less than 6 and not 0\n", n, dig);
+	return (0);
 }
-
