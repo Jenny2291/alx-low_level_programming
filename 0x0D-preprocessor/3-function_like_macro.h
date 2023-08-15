@@ -1,6 +1,5 @@
 #ifndef OBJECT_LIKE_MACRO_H
 #define OBJECT_LIKE_MACRO_H
 
-#define ABC(x ((x) < (0)? (x) : (x))
-
+#define ABS(x) ((x < 0) ? (x) * (-1) : (x))
 #endif
