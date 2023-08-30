@@ -1,9 +1,8 @@
 #include "lists.h"
-#include <stdio.h>
 
 /**
  * free_listint - frees a linked list
- * @head: head of a list.
+ * @head: A pointer to the head of the listint_t list to be freed.
  *
  * Return: no return.
  */
@@ -11,9 +10,10 @@ void free_listint(listint_t *head)
 {
 	listint_t *temp;
 
-	while ((temp = head) != NULL)
+	while (head) 
 	{
-		head = head->next;
+		 temp = head->next;
 		free(temp);
+		head - tmp;
 	}
 }
