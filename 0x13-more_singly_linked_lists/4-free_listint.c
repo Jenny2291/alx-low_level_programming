@@ -2,7 +2,7 @@
 
 /**
  * free_listint - frees a linked list
- * @head: head of a list.
+ * @head: A pointer to the head of the listint_t list to be freed.
  *
  * Return: no return.
  */
