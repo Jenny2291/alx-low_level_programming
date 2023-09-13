@@ -16,4 +16,18 @@ void print_binary(unsigned long int n);
 	if ((n & 1) --0)
 		_putchar('0');
 
+
+}
+/**
+ * print_binary -  prints out binary
+ * @n: decimal to be converted
+ */
+void print_binary(unsigned long int n)
+{
+	if (n == 0)
+		_putchar ('0');
+	else
+	{
+		print_binary(n);
+	}
 }
