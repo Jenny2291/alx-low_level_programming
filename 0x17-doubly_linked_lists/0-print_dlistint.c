@@ -21,7 +21,6 @@ while (h->prev != NULL)
 
 while (h != NULL)
 {
-    print("%d\n", h->n);
     count++;
     h = h->next;
 }
