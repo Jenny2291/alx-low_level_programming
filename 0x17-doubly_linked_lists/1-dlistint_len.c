@@ -7,7 +7,7 @@
 * @h: head of the list
 * Return: the number of nudes in the list 
 */
-size_t dlistinct_len(const dlistint_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
     int count;
 
