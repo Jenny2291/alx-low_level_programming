@@ -1,13 +1,13 @@
-#include "list.h"
+#include "lists.h"
 
 /**
-* distinct_len - return the number of elements in
+* dlistinct_len - return the number of elements in
 * a double linked list
 *
 * @h: head of the list
 * Return: the number of nudes in the list 
 */
-size_t distinct_len(const distint_t *h)
+size_t dlistinct_len(const dlistint_t *h)
 {
     int count;
 
