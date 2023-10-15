@@ -7,23 +7,23 @@
  * @h: head of the list
  * Return: the number of node
  */
- size_t print_distint(const distint_t *h)
+ size_t print_dlistint(const dlistint_t *h)
  {
     int count;
 
-    count - 0;
+    count = 0;
 
-    if (h == NULL)
+    if (h ==c NULL)
         return (count);
 
-while (h->prev != NULL)
-    h = h->prev;
+    while (h->prev != NULL)
+        h = h->prev;
 
-while (h != NULL)
-{
-    count++;
-    h = h->next;
-}
+    while (h != NULL)
+    {
+        count++;
+        h = h->next;
+    }
 
     return (count);
  }
