@@ -27,9 +27,9 @@ int _abs(int n)
 }
 
 /**
- * _atoi - converts string to int
+ * _atoi - converts string to integer
  * @s: points to string to check
- * Return: int
+ * Return: integer
 */
 int _atoi(char *s)
 {
