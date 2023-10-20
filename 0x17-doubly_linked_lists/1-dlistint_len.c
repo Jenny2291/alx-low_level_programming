@@ -5,7 +5,7 @@
 * a double linked list
 *
 * @h: head of the list
-* Return: the number of nudes in the list 
+* Return: length of the list 
 */
 size_t dlistint_len(const dlistint_t *h)
 {
