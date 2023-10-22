@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
  * _strcmp - compares two strings
- * @s1: string 1
- * @s2: string 2
+ * @s1: first string
+ * @s2: second string
  * Return: number of common characters
 */
 int _strcmp(char *s1, char *s2)
@@ -12,8 +11,8 @@ int _strcmp(char *s1, char *s2)
 
 /**
  * _strchr - locates character in string
- * @s: string to check
- * @c: character to find
+ * @s: string checked
+ * @c: character found
  * Return: pointer to the first occurrence of the character
 */
 char *_strchr(char *s, char c)
